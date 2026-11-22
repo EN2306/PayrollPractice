@@ -50,7 +50,7 @@ def calc_overtime_pay(employee):
     return r
 
 def format_payslip(employee):
-    return f"{employee['name']} ({employee['department']}) - Basic: ${calc_basic_salary(employee)} - Overtime: ${calc_overtime_pay(employee)}"
+    return f"{employee['name']} ({employee['department']}) - Basic: ${float(calc_basic_salary(employee)):.2f} - Overtime: ${float(calc_overtime_pay(employee)):.2f}"
 
 
 def main():
